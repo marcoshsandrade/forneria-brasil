@@ -140,6 +140,26 @@
     });
   }
 
+  /* ── Abas do cardápio ─────────────────────────────────────────────────── */
+  const abas = [...document.querySelectorAll('.abas [role="tab"]')];
+  const abrirAba = (aba, focar) => {
+    abas.forEach((b) => {
+      const ativa = b === aba;
+      b.setAttribute("aria-selected", ativa);
+      b.tabIndex = ativa ? 0 : -1;
+      document.getElementById(b.getAttribute("aria-controls")).hidden = !ativa;
+    });
+    if (focar) aba.focus();
+    aba.scrollIntoView({ block: "nearest", inline: "nearest" });
+  };
+  abas.forEach((b, i) => {
+    b.addEventListener("click", () => abrirAba(b));
+    b.addEventListener("keydown", (ev) => {
+      const passo = { ArrowRight: 1, ArrowLeft: -1 }[ev.key];
+      if (passo) { ev.preventDefault(); abrirAba(abas[(i + passo + abas.length) % abas.length], true); }
+    });
+  });
+
   /* ── Formulário → e-mail ──────────────────────────────────────────────── */
   const form = document.querySelector(".form");
   if (form && S.contato) {

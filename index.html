@@ -87,31 +87,195 @@
     <img class="arte arte--fundo" src="assets/img/cardapio.webp" alt="" loading="lazy">
     <div class="painel painel--cabecalho revelar">
       <span class="rotulo">02 · CARDÁPIO</span>
-      <h2>Do forno, três jeitos</h2>
+      <h2>Do forno para o seu prato</h2>
     </div>
-    <div class="cartoes cartoes--cardapio">
-      <article class="painel cartao revelar">
-        <h3>Pizzas</h3>
-        <ul class="pratos">
-          <li><strong>Marguerita</strong><span>molho de tomate, muçarela, manjericão fresco</span></li>
-          <li><strong>Calabresa</strong><span>molho de tomate, muçarela, calabresa, cebola</span></li>
-          <li><strong>Portuguesa</strong><span>muçarela, presunto, ovos, cebola, azeitona preta</span></li>
-          <li><strong>Quatro queijos</strong><span>muçarela, gorgonzola, parmesão, provolone</span></li>
+    <div class="cardapio painel revelar">
+      <div class="abas" role="tablist" aria-label="Categorias do cardápio">
+        <button type="button" role="tab" id="aba-classicas" aria-controls="lista-classicas" aria-selected="true">Pizzas clássicas</button>
+        <button type="button" role="tab" id="aba-especiais" aria-controls="lista-especiais" aria-selected="false" tabindex="-1">Pizzas especiais</button>
+        <button type="button" role="tab" id="aba-doces" aria-controls="lista-doces" aria-selected="false" tabindex="-1">Pizzas doces</button>
+        <button type="button" role="tab" id="aba-calzones" aria-controls="lista-calzones" aria-selected="false" tabindex="-1">Calzones</button>
+        <button type="button" role="tab" id="aba-massas" aria-controls="lista-massas" aria-selected="false" tabindex="-1">Massas</button>
+        <button type="button" role="tab" id="aba-petiscos" aria-controls="lista-petiscos" aria-selected="false" tabindex="-1">Petiscos</button>
+        <button type="button" role="tab" id="aba-extras" aria-controls="lista-extras" aria-selected="false" tabindex="-1">Bordas e extras</button>
+        <button type="button" role="tab" id="aba-bebidas" aria-controls="lista-bebidas" aria-selected="false" tabindex="-1">Bebidas</button>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-classicas" aria-labelledby="aba-classicas">
+        <p class="colunas"><span>Média</span><span>Grande</span></p>
+        <ul class="itens">
+          <li><div class="item"><strong>Calabresa</strong><span class="precos"><span class="preco">36,90</span><span class="preco">46,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, calabresa, cebola roxa e orégano.</p></li>
+          <li><div class="item"><strong>Mussarela</strong><span class="precos"><span class="preco">35,90</span><span class="preco">45,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, tomate cereja e orégano.</p></li>
+          <li><div class="item"><strong>Mista</strong><span class="precos"><span class="preco">35,90</span><span class="preco">45,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, presunto e orégano.</p></li>
+          <li><div class="item"><strong>Portuguesa</strong><span class="precos"><span class="preco">37,90</span><span class="preco">47,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, presunto, ovo, cebola roxa, azeitona e orégano.</p></li>
+          <li><div class="item"><strong>Frango</strong><span class="precos"><span class="preco">38,90</span><span class="preco">50,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, frango desfiado e milho.</p></li>
+          <li><div class="item"><strong>Carne de sol</strong><span class="precos"><span class="preco">45,90</span><span class="preco">55,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, carne de sol, cebola roxa e pimenta biquinho.</p></li>
+          <li><div class="item"><strong>Marguerita</strong><span class="precos"><span class="preco">35,90</span><span class="preco">47,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, manjericão, tomate cereja e parmesão.</p></li>
         </ul>
-      </article>
-      <article class="painel cartao revelar">
-        <h3>Massas</h3>
-        <ul class="pratos">
-          <li><strong>Spaghetti ao sugo</strong><span>molho de tomate, manjericão, parmesão</span></li>
-          <li><strong>Penne ao funghi</strong><span>creme de funghi e cogumelos</span></li>
-          <li><strong>Nhoque ao pesto</strong><span>pesto de manjericão, tomate-cereja, parmesão</span></li>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-especiais" aria-labelledby="aba-especiais" hidden>
+        <p class="colunas"><span>Média</span><span>Grande</span></p>
+        <ul class="itens">
+          <li><div class="item"><strong>Calabresa especial</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, calabresa, cream cheese, gorgonzola, azeitona, cebola roxa e orégano.</p></li>
+          <li><div class="item"><strong>Pepperoni</strong><span class="precos"><span class="preco">41,90</span><span class="preco">54,90</span></span></div>
+            <p>Molho de tomate italiano, pepperoni, parmesão e orégano.</p></li>
+          <li><div class="item"><strong>Carne de sol arretada</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, carne de sol, cebola roxa, queijo coalho e fio de mel.</p></li>
+          <li><div class="item"><strong>Marguerita especial</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, pesto de manjericão, tomate cereja, parmesão e orégano.</p></li>
+          <li><div class="item"><strong>Frango cheese</strong><span class="precos"><span class="preco">43,90</span><span class="preco">57,90</span></span></div>
+            <p>Molho de tomate italiano, frango desfiado, bacon fatiado, milho e cream cheese.</p></li>
+          <li><div class="item"><strong>Bacon e mel</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, queijo coalho, farofa de bacon, mel e parmesão.</p></li>
+          <li><div class="item"><strong>Milho e bacon</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, milho, bacon fatiado e orégano.</p></li>
+          <li><div class="item"><strong>Amatriciana</strong><span class="precos"><span class="preco">41,90</span><span class="preco">55,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, bacon, cebola roxa, parmesão, tomate cereja e manjericão.</p></li>
+          <li><div class="item"><strong>Brie e geleia de pimenta</strong><span class="precos"><span class="preco">46,90</span><span class="preco">61,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, queijo brie e geleia de pimenta.</p></li>
+          <li><div class="item"><strong>Camarão pomodoro</strong><span class="precos"><span class="preco">47,90</span><span class="preco">62,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, camarão, alho-poró, parmesão e tomate cereja.</p></li>
+          <li><div class="item"><strong>Camarão ao pesto</strong><span class="precos"><span class="preco">47,90</span><span class="preco">62,90</span></span></div>
+            <p>Pesto de manjericão, mussarela, camarão, tomate cereja e parmesão.</p></li>
+          <li><div class="item"><strong>Gergelim</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, manjericão, gergelim, parmesão e alho frito.</p></li>
+          <li><div class="item"><strong>Havaiana</strong><span class="precos"><span class="preco">39,90</span><span class="preco">52,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, lombinho canadense, abacaxi e cream cheese.</p></li>
         </ul>
-      </article>
-      <article class="painel cartao revelar">
-        <h3>Calzones</h3>
-        <p>A massa da casa fechada com o recheio dentro e assada até dourar. Pergunte os sabores do dia pelo WhatsApp.</p>
-        <a class="link-seta" data-whats href="#">Ver sabores no WhatsApp</a>
-      </article>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-doces" aria-labelledby="aba-doces" hidden>
+        <p class="colunas"><span>Média</span></p>
+        <ul class="itens">
+          <li><div class="item"><strong>Banoffee</strong><span class="precos"><span class="preco">37,90</span></span></div>
+            <p>Creme de leite, mussarela, banana, doce de leite, açúcar e canela.</p></li>
+          <li><div class="item"><strong>Churros</strong><span class="precos"><span class="preco">37,90</span></span></div>
+            <p>Creme de leite, doce de leite, açúcar e canela.</p></li>
+          <li><div class="item"><strong>Chocolate com morango</strong><span class="precos"><span class="preco">38,90</span></span></div>
+            <p>Creme de leite, chocolate e morango.</p></li>
+          <li><div class="item"><strong>MM&#x27;s</strong><span class="precos"><span class="preco">38,90</span></span></div>
+            <p>Creme de leite, chocolate e MM&#x27;s.</p></li>
+          <li><div class="item"><strong>Sonho de Valsa</strong><span class="precos"><span class="preco">38,90</span></span></div>
+            <p>Creme de leite, chocolate ao leite e bombom Sonho de Valsa.</p></li>
+        </ul>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-calzones" aria-labelledby="aba-calzones" hidden>
+        <p class="colunas"><span>27 cm</span></p>
+        <ul class="itens">
+          <li><div class="item"><strong>Carne com cheddar</strong><span class="precos"><span class="preco">32,90</span></span></div>
+            <p>Molho de tomate italiano, cubos de carne, mussarela, cheddar e cebola roxa.</p></li>
+          <li><div class="item"><strong>Frango com requeijão</strong><span class="precos"><span class="preco">27,00</span></span></div>
+            <p>Molho de tomate italiano, frango desfiado, mussarela, milho e requeijão.</p></li>
+          <li><div class="item"><strong>Queijo</strong><span class="precos"><span class="preco">25,00</span></span></div>
+            <p>Molho de tomate italiano, mussarela e orégano.</p></li>
+          <li><div class="item"><strong>Misto</strong><span class="precos"><span class="preco">27,00</span></span></div>
+            <p>Molho de tomate italiano, mussarela, presunto e orégano.</p></li>
+          <li><div class="item"><strong>Calabresa</strong><span class="precos"><span class="preco">27,00</span></span></div>
+            <p>Molho de tomate italiano, mussarela, calabresa, cebola roxa e orégano.</p></li>
+          <li><div class="item"><strong>Marguerita</strong><span class="precos"><span class="preco">28,00</span></span></div>
+            <p>Molho de tomate italiano, mussarela, tomate cereja, manjericão e orégano.</p></li>
+          <li><div class="item"><strong>Carne de sol</strong><span class="precos"><span class="preco">32,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, carne de sol e pimenta biquinho.</p></li>
+          <li><div class="item"><strong>Carne de sol com requeijão</strong><span class="precos"><span class="preco">32,90</span></span></div>
+            <p>Molho de tomate italiano, mussarela, carne de sol, pimenta biquinho e requeijão.</p></li>
+          <li><div class="item"><strong>Camarão com requeijão</strong><span class="precos"><span class="preco">38,00</span></span></div>
+            <p>Molho de tomate italiano, mussarela, camarão e requeijão.</p></li>
+        </ul>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-massas" aria-labelledby="aba-massas" hidden>
+        <ul class="itens">
+          <li><div class="item"><strong>Fettuccine ao pomodoro</strong><span class="precos"><span class="preco">31,00</span></span></div>
+            <p>Molho de tomate artesanal, manjericão fresco e parmesão.</p></li>
+          <li><div class="item"><strong>Fettuccine à carbonara</strong><span class="precos"><span class="preco">37,00</span></span></div>
+            <p>Molho de gemas, bacon, parmesão e mix de pimentas.</p></li>
+          <li><div class="item"><strong>Carbonara à brasileira</strong><span class="precos"><span class="preco">37,00</span></span></div>
+            <p>Fettuccine, molho branco, bacon, parmesão e mix de pimentas.</p></li>
+          <li><div class="item"><strong>Nordestino</strong><span class="precos"><span class="preco">37,00</span></span></div>
+            <p>Spaghetti com carne de sol salteada na manteiga da terra, cebola roxa, queijo coalho em cubos e mix de pimentas.</p></li>
+          <li><div class="item"><strong>Spaghetti à bolonhesa</strong><span class="precos"><span class="preco">36,00</span></span></div>
+            <p>Carne moída e molho de tomate artesanal, finalizado com parmesão.</p></li>
+          <li><div class="item"><strong>Penne ao roquefort</strong><span class="precos"><span class="preco">40,00</span></span></div>
+            <p>Cubos de carne levemente grelhados em molho gorgonzola, finalizado com parmesão.</p></li>
+          <li><div class="item"><strong>Penne aos quatro queijos</strong><span class="precos"><span class="preco">37,00</span></span></div>
+            <p>Creme de queijos: parmesão, mussarela, gorgonzola e catupiry.</p></li>
+          <li><div class="item"><strong>Camarão rústico</strong><span class="precos"><span class="preco">40,00</span></span></div>
+            <p>Fettuccine com molho de tomate artesanal, camarão, manjericão fresco e alho, finalizado com parmesão.</p></li>
+          <li><div class="item"><strong>Camarão molho branco</strong><span class="precos"><span class="preco">38,00</span></span></div>
+            <p>Fettuccine com molho branco, camarão e farofa de bacon, finalizado com parmesão.</p></li>
+          <li><div class="item"><strong>Camarão ao pesto</strong><span class="precos"><span class="preco">48,00</span></span></div>
+            <p>Fettuccine com camarão e molho pesto (azeite, castanha, alho, parmesão e manjericão).</p></li>
+          <li><div class="item"><strong>Linguine ao pollo</strong><span class="precos"><span class="preco">32,00</span></span></div>
+            <p>Frango desfiado, molho branco, ervilha e farofa de bacon.</p></li>
+          <li><div class="item"><strong>Arrabiata</strong><span class="precos"><span class="preco">33,00</span></span></div>
+            <p>Penne ao molho de tomate artesanal, cebola roxa, pimenta calabresa e azeitona preta, finalizado com parmesão.</p></li>
+        </ul>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-petiscos" aria-labelledby="aba-petiscos" hidden>
+        <ul class="itens itens--simples">
+          <li><div class="item"><strong>Pastelzinho de carne e azeitona</strong><span class="precos"><span class="preco">21,90</span></span></div></li>
+          <li><div class="item"><strong>Pastelzinho de queijo</strong><span class="precos"><span class="preco">21,90</span></span></div></li>
+          <li><div class="item"><strong>Bolinha de queijo</strong><span class="precos"><span class="preco">16,90</span></span></div></li>
+          <li><div class="item"><strong>Bolinha de peixe</strong><span class="precos"><span class="preco">16,90</span></span></div></li>
+          <li><div class="item"><strong>Batata frita</strong><span class="precos"><span class="preco">19,90</span></span></div></li>
+          <li><div class="item"><strong>Bordinha</strong><span class="precos"><span class="preco">16,90</span></span></div></li>
+        </ul>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-extras" aria-labelledby="aba-extras" hidden>
+        <div class="grupos">
+          <div><h3>Salva bordas</h3><ul class="itens itens--simples">
+            <li><div class="item"><strong>Chocolate ao leite</strong><span class="precos"><span class="preco">10,90</span></span></div></li>
+            <li><div class="item"><strong>Nutella</strong><span class="precos"><span class="preco">12,90</span></span></div></li>
+            <li><div class="item"><strong>Doce de leite</strong><span class="precos"><span class="preco">7,90</span></span></div></li>
+            <li><div class="item"><strong>Cheddar</strong><span class="precos"><span class="preco">8,90</span></span></div></li>
+            <li><div class="item"><strong>Creme de alho</strong><span class="precos"><span class="preco">6,90</span></span></div></li>
+            <li><div class="item"><strong>Pesto de manjericão</strong><span class="precos"><span class="preco">10,90</span></span></div>
+              <p>Manjericão, castanha, azeite, alho e parmesão.</p></li>
+          </ul></div>
+          <div><h3>Adicionais (50 g)</h3><ul class="itens itens--simples">
+            <li><div class="item"><strong>Cheddar</strong><span class="precos"><span class="preco">8,90</span></span></div></li>
+            <li><div class="item"><strong>Cream cheese</strong><span class="precos"><span class="preco">8,90</span></span></div></li>
+            <li><div class="item"><strong>Requeijão</strong><span class="precos"><span class="preco">8,90</span></span></div></li>
+            <li><div class="item"><strong>Ovo (1 und.)</strong><span class="precos"><span class="preco">3,00</span></span></div></li>
+            <li><div class="item"><strong>Azeitona</strong><span class="precos"><span class="preco">6,00</span></span></div></li>
+            <li><div class="item"><strong>Mussarela</strong><span class="precos"><span class="preco">8,00</span></span></div></li>
+            <li><div class="item"><strong>Cebola</strong><span class="precos"><span class="preco">5,90</span></span></div></li>
+            <li><div class="item"><strong>Parmesão</strong><span class="precos"><span class="preco">6,00</span></span></div></li>
+          </ul></div>
+          <div><h3>Sobremesas</h3><ul class="itens itens--simples">
+            <li><div class="item"><strong>Pudim</strong><span class="precos"><span class="preco">10,90</span></span></div></li>
+            <li><div class="item"><strong>Taça de sorvete</strong><span class="precos"><span class="preco">12,90</span></span></div></li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="aba" role="tabpanel" id="lista-bebidas" aria-labelledby="aba-bebidas" hidden>
+        <ul class="itens itens--simples">
+          <li><div class="item"><strong>Água</strong><span class="precos"><span class="preco">4,50</span></span></div></li>
+          <li><div class="item"><strong>Água com gás</strong><span class="precos"><span class="preco">5,50</span></span></div></li>
+          <li><div class="item"><strong>Sucos diversos (polpa) 300 ml</strong><span class="precos"><span class="preco">8,90</span></span></div></li>
+          <li><div class="item"><strong>Sucos diversos (polpa) 500 ml</strong><span class="precos"><span class="preco">15,90</span></span></div></li>
+          <li><div class="item"><strong>Suco de laranja 300 ml</strong><span class="precos"><span class="preco">9,00</span></span></div></li>
+          <li><div class="item"><strong>Suco de laranja 500 ml</strong><span class="precos"><span class="preco">16,00</span></span></div></li>
+          <li><div class="item"><strong>Suco de uva integral 500 ml</strong><span class="precos"><span class="preco">18,00</span></span></div></li>
+          <li><div class="item"><strong>Refrigerante lata</strong><span class="precos"><span class="preco">7,50</span></span></div></li>
+          <li><div class="item"><strong>Refrigerante 600 ml</strong><span class="precos"><span class="preco">9,90</span></span></div></li>
+          <li><div class="item"><strong>Sprite Lemon Fresh</strong><span class="precos"><span class="preco">8,00</span></span></div></li>
+          <li><div class="item"><strong>São Geraldo 1 L</strong><span class="precos"><span class="preco">12,00</span></span></div></li>
+          <li><div class="item"><strong>Guaraná ou Pepsi 1 L</strong><span class="precos"><span class="preco">11,00</span></span></div></li>
+          <li><div class="item"><strong>Coca-Cola 1 L</strong><span class="precos"><span class="preco">12,00</span></span></div></li>
+          <li><div class="item"><strong>Schweppes</strong><span class="precos"><span class="preco">7,50</span></span></div></li>
+          <li><div class="item"><strong>Del Valle lata</strong><span class="precos"><span class="preco">7,50</span></span></div></li>
+          <li><div class="item"><strong>Chá mate</strong><span class="precos"><span class="preco">6,90</span></span></div></li>
+          <li><div class="item"><strong>Soda italiana</strong><span class="precos"><span class="preco">14,90</span></span></div></li>
+        </ul>
+      </div>
+      <p class="cardapio-nota">Pizzas e calzones com massa italiana de longa fermentação. Preços em reais.</p>
+      <a class="botao" data-whats href="#">Fazer pedido no WhatsApp</a>
     </div>
   </section>
 
