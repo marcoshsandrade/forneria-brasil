@@ -314,3 +314,18 @@ h1 em, h2 em { font-style: italic; color: var(--acento); }
   .colunas span, .preco { width: 70px; }
   .itens strong { font-size: 15px; }
 }
+
+/* Alergênicos */
+.sprite-alerg { position: absolute; width: 0; height: 0; overflow: hidden; }
+.alerg { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.alerg svg, .legenda-alerg svg {
+  width: 28px; height: 28px; padding: 4.5px; border-radius: 50%; flex: none;
+  fill: none; stroke: var(--acento); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+  background: rgb(247 179 52 / .1); border: 1px solid rgb(247 179 52 / .28);
+}
+.legenda-alerg { margin-top: 26px; padding: 18px 20px; border: 1px solid var(--linha); border-radius: 14px; background: rgb(255 255 255 / .03); }
+.legenda-titulo { margin: 0 0 12px; font-size: 12px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--acento); }
+.legenda-alerg ul { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.legenda-alerg li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--texto); }
+.legenda-alerg > p:last-child { margin: 0; font-size: 13px; color: var(--texto-suave); }
+.legenda-alerg + .cardapio-nota { margin-top: 16px; }
