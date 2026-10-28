@@ -329,3 +329,10 @@ h1 em, h2 em { font-style: italic; color: var(--acento); }
 .legenda-alerg li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--texto); }
 .legenda-alerg > p:last-child { margin: 0; font-size: 13px; color: var(--texto-suave); }
 .legenda-alerg + .cardapio-nota { margin-top: 16px; }
+
+/* Instagram */
+.insta { display: inline-flex; align-items: center; gap: 8px; color: var(--texto); text-decoration: none; transition: color .3s; }
+.insta:hover { color: var(--acento); }
+.insta svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
+.insta .ponto { fill: currentColor; stroke: none; }
+.info dd a { color: var(--acento); }
